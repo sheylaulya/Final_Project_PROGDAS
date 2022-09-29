@@ -1,5 +1,5 @@
 :root {
-    --background-color: #EAE3D2;
+    --background-color: #DFF6FF;
     --background-color2:#DEB6AB;
     --main-color1:#114E60;
     --main-color2:#325288;
@@ -12,6 +12,10 @@
     font-family: 'quicksand', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
+}
+
+.container{
+display: flex;
 }
 
 #index nav {
@@ -29,7 +33,7 @@
     align-items: center;
     gap: 100px;
     position: relative;
-    left: -8vw;
+    left: -6vw;
 }
 #index nav li{
     list-style: none;
@@ -49,7 +53,7 @@
     display: flex;
     justify-content: end;
     position: absolute;
-    left: 78vw;
+    left: 80vw;
 }
 
 #index .signin a{
@@ -60,4 +64,209 @@
     border-radius: 15px;
     font-size: 14px;
     opacity: 80%;
+}
+
+#index .hero .row-1{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#index .hero h1{
+    letter-spacing: 8px;
+    font-size: 45px;
+    color: var(--main-color2);
+    font-weight: 800;
+}
+
+#index .hero h3{
+    letter-spacing: 25px;
+    font-size: 30px;
+    color: var(--main-color1);
+    font-weight:500;
+}
+#index .hero h3 span{
+    font-weight: 900;
+}
+
+#index .mainobject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#index .background {
+    width: 344px;
+    height: 399px;
+    background-color: none;
+    border: 1px solid var(--main-color2);
+    border-radius: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#index .mainobject img {
+    width: 284px;
+    height: 369px;
+    border-radius:  200%;
+}
+#index .mainobject button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 39vw;
+    top: 73vh;
+    font-size: 40px;
+    border: none;
+    background-color: var(--main-color2);
+    font-weight: 600;
+    color: var(--background-color);
+}
+#index .arrow{
+    width: 170px;
+    height: 150px;
+    position: absolute;
+    left: 27vw;
+    transform: rotate(187deg);
+    top: 58vh;
+    background-color: transparent;
+}
+
+#index p{
+    position: absolute;
+    top: 55vh;
+    left: 23vw;
+    font-size: 20px;
+    background-color: transparent;
+    transform: rotate(-10deg);
+    font-weight: 700;
+    color: var(--main-color2);
+    text-align: center;
+}
+
+#index p span{
+    color: var(--main-color1);
+}
+
+#index .left-row-atas{
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    position: absolute;
+    top: 35vh;
+    left: 25vh;
+    margin: 20px;
+    gap: 20px;
+    background-color: transparent;
+}
+
+#index .left-row-atas img{
+    width: 75px;
+    opacity: 70%;
+}
+#index .left-row-atas h3{
+    font-weight: 800;
+    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+#index .left-row-atas h5{
+    font-weight: 700;
+    font-size: 16px;
+    word-spacing: 6px;
+    color: var(--main-color2);
+}
+#index .left-row-bawah{
+    display: flex;
+}
+#index .left-row-bawah img{
+    width: 150px;
+    opacity: 100%;
+    position: absolute;
+    top: 37vh;
+    left: 3vw;
+    border-radius: 50%;
+}
+#index .left-row-bawah p{
+    transform: rotate(0deg);
+    position: absolute;
+    left: -4vw;
+    top: 45vh;
+    text-align: end;
+}
+
+#index .right-row-atas{
+    display: flex;
+}
+#index .right-row-atas img{
+    width: 150px;
+    opacity: 100%;
+    position: absolute;
+    top: 32vh;
+    left: 65vw;
+    border-radius: 50%;
+}
+#index .right-row-atas p{
+    transform: rotate(0deg);
+    position: absolute;
+    left: 76vw;
+    top: 36vh;
+    text-align: start;
+}
+
+#index .right-row-tengah{
+    width: 250px;
+    height: 300px;
+    left: 59vw;
+    top: 63vh;
+    position: absolute;
+    background-color: transparent;
+ 
+}
+
+#index .right-row-tengah h4{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: transparent;
+    color: var(--main-color2);
+    line-height: 40px;
+}
+#index .right-row-tengah h4 span{
+    background-color: transparent;
+    color: var(--main-color1);
+}
+#index .right-row-tengah .garis {
+    width: 10vw;
+    height: 2px;
+    background-color: var(--main-color2);
+    margin-left: 25px;
+}
+#index .right-row-bawah {
+    width: 280x;
+    height: 300px;
+    left: 73vw;
+    top: 63vh;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#index .right-row-bawah img{
+    width: 67px;
+    background-color: transparent;
+    opacity: 80%;
+}
+#index .right-row-bawah h2{
+    text-align: end;
+    color: var(--main-color2);
+}
+#index .right-row-bawah h2 span{
+    color: var(--main-color1);
 }
