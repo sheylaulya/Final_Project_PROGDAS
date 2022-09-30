@@ -8,12 +8,13 @@ body #log {
 * {
     margin: 0;
     padding: 0;
+    background-color: transparent;
 }
 
 .login {
     /* background-color: pink; */
     width: 100%;
-    height: 760px;
+    height: 749px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -28,9 +29,9 @@ body #log {
 
 .form {
     /* background-color: pink; */
-    width: 60%;
+    width: 70%;
     height: 100%;
-    margin-left: 40%;
+    margin-left: 55%;
     margin-top: 40px;
 }
 .jud-log {
@@ -222,6 +223,7 @@ form a span:nth-child(4) {
   text-decoration: none;
   font-weight: 800;
   color: white;
+
 }
 
 .or-item {
@@ -231,6 +233,8 @@ form a span:nth-child(4) {
   /* background-color: pink; */
   width: 30%;
   height: 70px;
+  gap: 40px;
+
 }
 .or-item i {
   font-size: 50px;

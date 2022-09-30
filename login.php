@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="landing page/style.css">
 
     <!-- font area -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
@@ -36,7 +36,7 @@
             <form action="">
                 <input type="text" placeholder="username" required="required">
                 <input type="password" placeholder="password" required="required">
-                <a href="landing page/index.php" >
+                <a href="landing page/landingpage.php" >
                     <span></span>
                     <span></span>
                     <span></span>
