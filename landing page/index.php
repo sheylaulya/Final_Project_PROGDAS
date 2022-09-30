@@ -1,3 +1,7 @@
+<?php
+include 'koneksi.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -165,208 +169,48 @@
                 </p>
             </div>
         </div>
-        <div class="chart">
-            <div class="c-1">
-                <div class="nama">
-                    <div class="ck">
-                        <p>castle cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/564x/05/e2/94/05e294ac8f786d7a1152ec2a01a41000.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 197.41</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 200,00</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div>
-            <div class="c-2">
-                <div class="nama">
-                    <div class="ck">
-                        <p>floral cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/736x/d8/36/39/d83639f8f871da2891c4976fc1daf434.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 164.51</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 170,00</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div>
-            <div class="c-3">
-                <div class="nama">
-                    <div class="ck">
-                        <p>dramatic cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/564x/b5/f2/e4/b5f2e4803a04b8dbec5d8cc39f0c3152.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 227,03</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 230,05</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div>
-            <div class="c-4">
-                <div class="nama">
-                    <div class="ck">
-                        <p>gradient cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/564x/24/c5/61/24c561739d32e4000f741025d377b0e5.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 171,09</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 180,03</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div>
-            <!-- <div class="c-5">
-                <div class="nama">
-                    <div class="ck">
-                        <p>fauna's cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-                
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/564x/8e/8b/43/8e8b437026bec7618a7abe0b803aa494.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 180,96</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 190,00</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div> -->
-
-            <!-- <div class="c-6">
-                <div class="nama">
-                    <div class="ck">
-                        <p>lego cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-                
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/564x/52/75/83/527583e7cfa4d624d23e641425fb649a.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 263.22</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 265,03</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div> -->
-
-            <!-- <div class="c-4">
-                <div class="nama">
-                    <div class="ck">
-                        <p>royal cake</p>
-                    </div>
-                    <div class="ker">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-                
-                <div class="gambar">
-                    <img src="https://i.pinimg.com/564x/52/85/c6/5285c622cb4c9d3df40d6fb30ee14e8b.jpg" alt="">
-                </div>
-
-                <div class="harga">
-                    <div class="harga-1">
-                        <p>$ 131.61</p>
-                    </div>
-
-                    <div class="harga-2">
-                        <p><s>$ 140,05</s></p>
-                    </div>
-                </div>
-
-                <div class="buy">
-                    <p>BUY NOW</p>
-                </div>
-            </div> -->
-
-        </div>
     </div>
+        <?php
+     $sql = ("SELECT * from rekomen");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+  <div class='chart'>
+ 
+  <div class='c-1'>
+ 
+      <div class='nama'>
+          <div class='ck'>
+              <p>$data[nama]</p>
+          </div>
+          <div class='ker'>
+              <i class='fa-solid fa-cart-shopping'></i>
+          </div>
+      </div>
+
+      <div class='gambar'>
+          <img src='gambar/$data[gambar]' alt=''>
+      </div>
+
+      <div class='harga'>
+          <div class='harga-1'>
+              <p>$data[harga]</p>
+          </div>
+
+          <div class='harga-2'>
+              <p><s>$data[diskon]</s></p>
+          </div>
+      </div>
+
+      <div class='buy'>
+          <p>BUY NOW</p>
+      </div>
+ </div>
+</div>
+";
+    }
+    ?>
+
 
     <!-- FAQ -->
     <div id="FAQ" class="faq">
@@ -479,7 +323,7 @@
         </div>
     </div>
 
-    
+
     <!-- Foooter -->
     <div class="footer">
         <div class="content">
@@ -513,7 +357,7 @@
             <div class="logo">
                 <img src="asset/Desain tanpa judul (1).png" alt=""> <br>
                 <div class="copyright">
-                    <img src="asset/copyright (1).png" alt=""> 
+                    <img src="asset/copyright (1).png" alt="">
                     <p class="copyright-text">1997-now, Favors</p>
                 </div>
             </div>
@@ -534,7 +378,7 @@
     </div>
 
 
-    
+
 
 </body>
 

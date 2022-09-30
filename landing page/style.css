@@ -25,14 +25,18 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    z-index: 1;
+
+    
+
 
 }
 
 #index nav ul{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 90px;
     position: relative;
     left: -6vw;
 }
@@ -81,6 +85,7 @@ display: flex;
     font-size: 45px;
     color: var(--main-color2);
     font-weight: 800;
+    margin-top: 110px;
 }
 
 #index .hero h3{
@@ -97,7 +102,7 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 #index .background {
     width: 344px;
@@ -495,17 +500,18 @@ display: flex;
 /* best seller */
 
 .best-seller{
-    margin-top: 20px;
+    margin-top: 150px;
 }
 .judul-lagoon h2{
     font-weight: 400;
     color: #114E60;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 35px;
     font-family: 'quicksand';
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 0px;
     width: 800px;
+    position: relative;
+    left: 5.5vw;
 }
 
 .gambar-lagoon img{
@@ -637,7 +643,7 @@ display: flex;
 
 .harga h2:nth-child(2){
     position: absolute;
-    margin-top:150px;
+    margin-top:370px;
     margin-left: 500px;
 }
 
@@ -675,11 +681,6 @@ display: flex;
     position: absolute;
 }
 
-
-
-
-
-
 .rec-product {
     background-color: var(--background-color);
     display: flex;
@@ -687,7 +688,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 40vh;
 }
 .title-rp {
     background-color: pink;
@@ -745,28 +746,26 @@ display: flex;
     background-color: transparent;
     margin-left: 15px;
 }
+
+
 .chart {
     /* background-color: plum; */
     width: 80%;
     height: 400px;
     margin-top: 10px;
     box-sizing: border-box;
-    overflow: scroll;
+    /* overflow: scroll; */
     display: flex;
+    margin-bottom: 180px;
+    position: relative;
+    left: 150px;
+    
     
 }
-.chart .c-1, 
-.chart .c-2,  
-.chart .c-3, 
-.chart .c-4,  
-.chart .c-5, 
-.chart .c-6,  
-.chart .c-7{
+.chart .c-1{
     background-color: #114d6053;
     width: 22%;
     height: 90%;
-    margin-top: 20px;
-    margin-left: 10px;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -1050,9 +1049,7 @@ display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo p{
-    
-}
+
 .logo img {
     width: 300px;
     margin-top: -45px;
