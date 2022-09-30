@@ -270,3 +270,204 @@ display: flex;
 #index .right-row-bawah h2 span{
     color: var(--main-color1);
 }
+
+/* tampilan awal */
+
+
+#TA .row-kanan{
+    top: 5vh;
+    width: 40vw;
+    height: 90vh;
+    position: absolute;
+    left: 51vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#TA .row-kanan img {
+    width: 51rem;
+}
+
+#TA .card1 {
+    width: 170px;
+    height: 200px;
+    background-color: #FFFCF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -3vw;
+    top: 45vh;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(210,157,157,0.25);
+    z-index: 1;
+}
+#TA .card1 img {
+    width: 135px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#TA .card1-text {
+    text-align: start;
+    background-color: transparent;
+    margin-top: 10px;
+    line-height: 16px;
+    color: var(--main-color1);
+    margin-left: -30px;
+}
+#TA .row-kanan p{
+    font-size: 10px;
+    background-color: transparent;
+    font-weight: 300;
+}
+#TA .row-kanan h6{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    font-weight: 800;
+
+}
+#TA .card2 {
+    width: 170px;
+    height: 200px;
+    background-color: #FFFCF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 28vw;
+    top: 5vh;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(210,157,157,0.25);
+}
+
+#TA .card2-text {
+    text-align: start;
+    background-color: transparent;
+    margin-top: 10px;
+    line-height: 16px;
+    color: var(--main-color1);
+    margin-left: 10px;
+}
+
+
+#TA .card2 img {
+    width: 135px;
+    border-radius: 5px;
+}
+
+#TA .card3 {
+    width: 170px;
+    height: 200px;
+    background-color: #FFFCF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 32vw;
+    top: 58vh;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(210,157,157,0.25);
+
+}
+
+#TA .card3-text {
+    text-align: start;
+    background-color: transparent;
+    margin-top: 10px;
+    line-height: 16px;
+    color: var(--main-color1);
+    margin-left: 10px;
+    margin-left: -50px;
+}
+
+
+#TA .card3 img {
+    width: 130px;
+    border-radius: 5px;
+}
+
+#TA .row-kiri{
+    position: absolute;
+    left: -44vw;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: transparent;
+}
+
+#TA .row-kiri .text1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#TA .row-kiri .text1 .line{
+    width: 5vw;
+    height: 2px;
+    background-color: var(--main-color1);
+}
+#TA .row-kiri .text1 p{
+    font-size: 16px;
+    color: var(--main-color1);
+}
+#TA .text2 h1{
+    font-size: 70px;
+    line-height: 85px;
+    margin-top: -20px;
+    font-weight: 900;
+    color: var(--main-color1);
+    background-color: transparent;
+}
+#TA .text2 h1 span{
+    color: var(--main-color2);
+    background-color: transparent;
+}
+#TA .text3 p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 20px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: var(--main-color1);
+    
+}
+
+#TA .btn {
+    width: 400px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+#TA .btn a {
+    text-decoration: none;
+}
+
+#TA .btn-1 {
+    background-color: var(--main-color2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 17px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#TA .btn-2 {
+    background-color: transparent;
+    border: 1px solid  rgba(210,157,157,0.25);
+    color: var(--main-color2);
+    padding: 10px 40px;
+    border-radius: 17px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
