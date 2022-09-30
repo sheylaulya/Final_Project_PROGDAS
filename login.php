@@ -36,7 +36,7 @@
             <form action="">
                 <input type="text" placeholder="username" required="required">
                 <input type="password" placeholder="password" required="required">
-                <a href="landing page/landingpage.php" >
+                <a href="landing page/index.php">
                     <span></span>
                     <span></span>
                     <span></span>

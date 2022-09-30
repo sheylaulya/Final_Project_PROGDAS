@@ -28,14 +28,14 @@ include 'koneksi.php'
     <div id="index" class="container1">
         <nav>
             <ul>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Recommendation</a></li>
-                <li><a href="">Home</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#rekom-produk">Recommendation</a></li>
+                <li><a href="#index">Home</a></li>
                 <li>
                     <img src="asset/logo.png" alt="logo">
                 </li>
-                <li><a href="">Best Seller</a></li>
-                <li><a href="">Promo</a></li>
+                <li><a href="#best-seller">Best Seller</a></li>
+                <li><a href="#footer">More</a></li>
             </ul>
             <div class="signin">
                 <a href="">Sign In</a>
@@ -157,6 +157,7 @@ include 'koneksi.php'
     </div>
 
     <!-- recomendded product -->
+    <div id="rekom-produk">
     <div class="rec-product">
         <div class="title-rp">
             <p> create a story</p>
@@ -169,47 +170,50 @@ include 'koneksi.php'
                 </p>
             </div>
         </div>
-    </div>
-        <?php
+
+    </div><div class='wrapper'>        
+    <?php
      $sql = ("SELECT * from rekomen");
      $query = mysqli_query($connect, $sql);
      while($data = mysqli_fetch_array($query)){
         echo"
-  <div class='chart'>
- 
-  <div class='c-1'>
- 
-      <div class='nama'>
-          <div class='ck'>
-              <p>$data[nama]</p>
-          </div>
-          <div class='ker'>
-              <i class='fa-solid fa-cart-shopping'></i>
-          </div>
-      </div>
+    <div class='chart'>
+        <div class='c-1'>
+            <div class='nama'>
+                <div class='ck'>
+                    <p>$data[nama]</p>
+                </div>
+                <div class='ker'>
+                    <i class='fa-solid fa-cart-shopping'></i>
+                </div>
+            </div>
 
-      <div class='gambar'>
-          <img src='gambar/$data[gambar]' alt=''>
-      </div>
+            <div class='gambar'>
+                <img src='gambar/$data[gambar]' alt=''>
+            </div>
 
-      <div class='harga'>
-          <div class='harga-1'>
-              <p>$data[harga]</p>
-          </div>
+            <div class='harga'>
+                <div class='harga-1'>
+                    <p>$data[harga]</p>
+                </div>
 
-          <div class='harga-2'>
-              <p><s>$data[diskon]</s></p>
-          </div>
-      </div>
+                <div class='harga-2'>
+                    <p><s>$data[diskon]</s></p>
+                </div>
+            </div>
 
-      <div class='buy'>
-          <p>BUY NOW</p>
-      </div>
- </div>
-</div>
-";
+            <div class='buy'>
+                <p>BUY NOW</p>
+            </div>
+
+        </div>
+        </div>";
     }
     ?>
+    </div>
+    </div>
+   
+     
 
 
     <!-- FAQ -->
@@ -325,7 +329,7 @@ include 'koneksi.php'
 
 
     <!-- Foooter -->
-    <div class="footer">
+    <div id="footer" class="footer">
         <div class="content">
             <div class="favors">
                 <p>Favors</p>
