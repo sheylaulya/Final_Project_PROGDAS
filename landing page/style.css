@@ -969,6 +969,18 @@ display: flex;
     background-color: #bad3ff;
 }
 
+.lingkaran-b {
+    margin-top: 18px;
+    background-color: #8ba7d7;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.lingkaran-b:hover {
+    background-color: #bad3ff;
+}
+
 .tanya {
     /* background-color: pink; */
     transform: translate(25%, -180%);
@@ -1026,7 +1038,6 @@ display: flex;
     width: 500px;
     background-color: transparent;
 }
-
 
 /* footer */
 

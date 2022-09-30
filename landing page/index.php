@@ -222,7 +222,7 @@ include 'koneksi.php'
                 </div>
                 <div class="faq-kotak-1">
                     <div class="a">
-                        <div class="lingkaran-a">
+                        <div class="lingkaran-b">
 
                         </div>
 
@@ -234,7 +234,7 @@ include 'koneksi.php'
 
                 <div class="faq-kotak-2">
                     <div class="a">
-                        <div class="lingkaran-a">
+                        <div class="lingkaran-b">
 
                         </div>
 
@@ -246,7 +246,7 @@ include 'koneksi.php'
 
                 <div class="faq-kotak-3">
                     <div class="a">
-                        <div class="lingkaran-a">
+                        <div class="lingkaran-b">
 
                         </div>
 

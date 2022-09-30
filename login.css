@@ -1,0 +1,247 @@
+body #log {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxx;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    /* background-color: pink; */
+    width: 100%;
+    height: 760px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    display: flex;
+    overflow: hidden;
+    background-image: url(assetTA/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: -10px; */
+}
+
+.form {
+    /* background-color: pink; */
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+.jud-log {
+    width: 100%;
+    height: 25%;
+    margin-top: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jud-log h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.user {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user i {
+    color: black;
+    font-size: 35px;
+}
+.jud-log a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.jud-log a:hover {
+    color: skyblue;
+}
+
+form {
+    width: 100%;
+    height: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    height: 20%;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+input::placeholder {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+form a:hover {
+    background: skyblue;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px skyblue,
+                0 0 25px skyblue,
+                0 0 50px skyblue,
+                0 0 100px skyblue;
+  }
+  
+form a span {
+    position: absolute;
+    display: block;
+  }
+  
+form a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, skyblue);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+form a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, skyblue);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+form a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, skyblue);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, skyblue);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+
+  
+.or {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.a-or {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+}
+
+.or-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: pink; */
+  width: 30%;
+  height: 70px;
+}
+.or-item i {
+  font-size: 50px;
+  color: white;
+}
+.or-item i:hover {
+  color: skyblue;
+}
+.or-item p {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: white;
+}
