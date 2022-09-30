@@ -12,6 +12,7 @@
     font-family: 'quicksand', sans-serif;
     /* font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -1024,5 +1025,137 @@ display: flex;
 .tanya-9 {
     transform: translate(18%, -185%);
     width: 500px;
+    background-color: transparent;
+}
+
+
+/* footer */
+
+.content {
+    width: 100%;
+    height: 300px;
+    background-color: #F4EEE8;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 100px;
+    position: relative;
+
+}
+.logo{
+    position: relative;
+    left: -4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    
+}
+.logo img {
+    width: 300px;
+    margin-top: -45px;
+    margin-left: -0px;
+}
+
+.copyright {
+    display: flex;
+    background-color: transparent;
+}
+.copyright img{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    background-color: transparent;
+    margin-left: -5px;
+    font-weight: 400;
+}
+.copyright p{
+    background-color: #F4EEE8;
+}
+.favors{
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: transparent;
+    position: relative;
+    left: 5vw;
+}
+.favors p, ul li{
+    background-color: transparent ;
+}
+
+.footer p {
+    margin-left: 40px;
+    font-weight: 700;
+    color: var(--main-color2);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    background-color: transparent;
+    margin-left: 0px;
+}
+
+.footer ul {
+    background-color: transparent;
+}
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: var(--main-color2);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    background-color: #F4EEE8;
+}
+.help-center{
+    margin-left: 125px;
+    position: relative;
+    top: 40px;
+    left: 8vw;
+    background-color: transparent;
+}
+.best_seller{
+    width: 200px;
+    position: relative;
+    left: 19vw;
+    margin-top: 40px;
+    background-color: transparent;
+}
+.best_seller p{
+    background-color: transparent;
+}
+.logo{
+    position: relative;
+    left: 22vw;
+    margin-top: 50px;
+    background-color: transparent;
+}
+.sosmed {
+    background-color: transparent;
+    position: relative;
+    left: -35vw;
+    top: 29vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.sosmed ul {
+    display: flex;
+    background-color: transparent;
+}
+.sosmed ul li {
+    background-color: transparent;
+}
+.sosmed ul li img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 35px;
+    opacity: 70%;
     background-color: transparent;
 }
