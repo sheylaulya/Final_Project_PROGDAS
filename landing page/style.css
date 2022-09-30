@@ -494,7 +494,7 @@ display: flex;
 /* best seller */
 
 .best-seller{
-    margin-top: ;
+    margin-top: 20px;
 }
 .judul-lagoon h2{
     font-weight: 400;
@@ -672,4 +672,357 @@ display: flex;
     margin-bottom: 0px;
     width: fit-content;
     position: absolute;
+}
+
+
+
+
+
+
+.rec-product {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.title-rp {
+    background-color: pink;
+    width: 100%;
+    height: 90px;
+}
+.title-rp p {
+    position: absolute;
+    color: var(--main-color2);
+    /* background-color: pink; */
+    width: 100%;
+    height: 50px;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.title-rp h1 {
+    position: absolute;
+    color: var(--main-color1);
+    margin-top: 45px;
+    width: 100%;
+    height: 50px;
+    letter-spacing: 15px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+.title-rp span {
+    background-color: transparent;
+    font-weight: 1000;
+}
+.rec-pro {
+    /* background-color: purple; */
+    width: 100%;
+    height: 70px;
+    margin-top: -10px;
+}
+.rec-pro .garis {
+    background-color: var(--main-color1);
+    width: 30%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 545px;
+}
+.rec-pro .garis p {
+    background-color: transparent;
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.rec-pro .garis p i {
+    background-color: transparent;
+    margin-left: 15px;
+}
+.chart {
+    /* background-color: plum; */
+    width: 80%;
+    height: 400px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    overflow: scroll;
+    display: flex;
+    
+}
+.chart .c-1, 
+.chart .c-2,  
+.chart .c-3, 
+.chart .c-4,  
+.chart .c-5, 
+.chart .c-6,  
+.chart .c-7{
+    background-color: #114d6053;
+    width: 22%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.nama {
+    background-color: #114d6053;
+    width: 90%;
+    height: 50px;
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ck {
+    background-color: #114d6053;
+    width: 75%;
+    height: 35px;
+    border-radius: 5px;
+}
+.ck p {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--background-color);
+    text-align: center;
+    margin-top: 4px;
+}
+.ker {
+    background-color: #114d6053;
+    width: 35px;
+    height: 35px;
+    border-radius: 7px;
+    margin-left: 2%;
+}
+.ker i {
+    background-color: transparent;
+    display: flex;
+    margin-left: 9px;
+    margin-top: 10px;
+    color: var(--background-color);
+}
+.ker:hover {
+    background-color: var(--main-color1);
+}
+.gambar {
+    /* background-color: black; */
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-left: 22%;
+}
+.gambar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.harga {
+    background-color: transparent;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+}
+.harga-1, .harga-2 {
+    background-color: #114d60ae;
+    height: 70%;
+    width: 47%;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.harga-1 p {
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    color: yellow;
+}
+.harga-2 p, .harga-2 s {
+    background-color: transparent;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 7px;
+    color: var(--background-color);
+}
+.buy {
+    background-color: #114d607c;
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    margin-top: -5px;
+    border-radius: 10px;
+}
+.buy p {
+    background-color: transparent;
+    color: var(--background-color);
+    text-align: center;
+    font-size: 19px;
+    padding-top: 5px;
+    font-weight: 900;
+}
+.buy:hover{
+    background-color: #114E60;
+}
+
+
+
+
+
+
+
+/* FAQ */
+
+.faq {
+    background-color: var(--background-color);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10px;
+}
+.faq-kiri {
+    width: 50%;
+    background-color: transparent;
+    /* background-color: yellow; */
+}
+.faq-kiri .judul-faq {
+    height: 30%;
+    width: 100%;
+    background-color: transparent;
+    /* background-color: navajowhite; */
+    box-sizing: border-box;
+}
+.judul-faq .bg {
+    height: 100%;
+    width: 70%;
+    background-color: #3252881f;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+    margin-top: -30px;
+    margin-left: 90px;
+}
+.bg h1 {
+    /* background-color: blue; */
+    color: var(--main-color2);
+    transform: rotate(8deg);
+    width: 100px;
+    font-size: 90px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 130px;
+    padding-top: 20px;
+    background-color: transparent;
+}
+.bg p {
+    transform: rotate(8deg);
+    font-family: 'quicksand', sans-serif;
+    margin-left: 90px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--main-color2);
+    background-color: transparent;
+}
+.faq-kiri .faq-kotak-1, .faq-kotak-2, .faq-kotak-3{
+    height: 50%;
+    width: 90%;
+    background-color: var(--main-color2);
+    box-shadow: 5px 5px 10px #3252888e;
+    margin-top: 30px;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+
+.faq-kanan {
+    width: 50%;
+    /* background-color: plum; */
+    background-color: transparent;
+}
+.faq-kanan .faq-kotak-5, .faq-kotak-6, .faq-kotak-7, .faq-kotak-8, .faq-kotak-9 {
+    height: 15.5%;
+    width: 91%;
+    background-color: var(--main-color2);
+    box-shadow: 5px 5px 10px #3252888e;
+    margin-top: 30px;
+    margin-left: 5%;
+    border-radius: 20px;
+    display: flex;
+}
+.a {
+    padding-top: 22px;
+    padding-left: 20px;
+    background-color: transparent;
+}
+.lingkaran-a {
+    background-color: #8ba7d7;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.lingkaran-a:hover {
+    background-color: #bad3ff;
+}
+
+.tanya {
+    /* background-color: pink; */
+    transform: translate(25%, -180%);
+    width: 350px;
+    background-color: transparent;
+}
+.tanya p, 
+.tanya-2 p, 
+.tanya-3 p, 
+.tanya-5 p, 
+.tanya-6 p,
+.tanya-7 p, 
+.tanya-8 p,
+.tanya-9 p {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--background-color);
+    margin-top: 30px;
+    background-color: transparent;
+}
+
+.tanya-2 {
+    transform: translate(18%, -120%);
+    width: 500px;
+    background-color: transparent;
+}
+.tanya-3 {
+    transform: translate(18%, -120%);
+    width: 500px;
+    background-color: transparent;
+}
+.tanya-5 {
+    transform: translate(18%, -180%);
+    width: 500px;
+    background-color: transparent;
+}
+.tanya-6 {
+    transform: translate(18%, -180%);
+    width: 500px;
+    background-color: transparent;
+}
+.tanya-7 {
+    transform: translate(18%, -115%);
+    width: 500px;
+    background-color: transparent;
+}
+.tanya-8 {
+    transform: translate(18%, -185%);
+    width: 500px;
+    background-color: transparent;
+}
+.tanya-9 {
+    transform: translate(18%, -185%);
+    width: 500px;
+    background-color: transparent;
 }
