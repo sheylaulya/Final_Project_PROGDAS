@@ -471,3 +471,205 @@ display: flex;
     border-radius: 17px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
 }
+
+
+.judul{
+    display: flex;
+    width: 900px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.judul h2{
+    margin-left: 30px;
+    margin: auto;
+    color: #114E60;
+    font-weight: 500;
+    font-size: 60px;
+    font-family:  'Poppins', sans-serif;
+    letter-spacing: 10px;
+}
+
+/* best seller */
+
+.best-seller{
+    margin-top: ;
+}
+.judul-lagoon h2{
+    font-weight: 400;
+    color: #114E60;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'quicksand';
+    font-size: 60px;
+    margin-bottom: 0px;
+    width: 800px;
+}
+
+.gambar-lagoon img{
+    margin-top: 0px;
+    margin-left: 100px;
+    border-radius: 200%;
+}
+
+.judul-lagoon{
+    display: flex;
+    height: 130px;
+}
+
+.judul-lagoon img{
+    margin-left: 473px;
+    width: 87px;
+    height: 87px;
+    margin-top: 30px;
+}
+
+.gambar-lagoon img:nth-child(2){
+    margin-left: 430px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.judul-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #114E60;
+    letter-spacing: 10px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.judul-text h3{
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: 'Poppins';
+    color: #114E60;
+    font-weight: 300;
+}
+
+.judul-text{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+
+
+.gambar-lagoon{
+    display: flex;
+}
+
+.textlagoon {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 590px;
+    font-family: 'quicksand';
+    color: #114E60;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.gambar-lagoon h2{
+    font-family: 'sacramento';
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 30px;
+    color: #114E60;
+}
+
+.cakeall a{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 790px;
+    text-decoration: none;
+    color: white;
+    background-color: #114E60;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'quicksand';
+    font-weight: 600;
+}
+
+.cakeall a:nth-child(2){
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 700px;
+    text-decoration: none;
+    color: white;
+    background-color: #114E60;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'quicksand';
+    font-weight: 600;
+}
+
+.gambar-lava{
+    display:flex;
+    margin-left: 50px;
+}
+
+.textgambar-lava h2{
+    font-family: "poppins";
+    letter-spacing: 10px;
+    font-size: 40px;
+    margin-left: 30px;
+    color: #114E60;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.textgambar-lava p{
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'poppins';
+    color: #114E60;
+}
+
+.cakelava{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 133px;
+}
+
+.harga h2:nth-child(2){
+    position: absolute;
+    margin-top:150px;
+    margin-left: 500px;
+}
+
+.harga h3{
+    margin-top: px;
+    margin-left: 190px;
+    color: #114E60;
+    font-family: 'quicksand';
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.text-cake-lava{
+    margin-top: 220px;
+}
+
+.harga h4{
+    margin-top: px;
+    margin-left: 410px;
+    color: #114E60;
+    font-family: 'quicksand';
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.judul-lagoon h4{
+    font-weight: 400;
+    color: #114E60;
+    margin-top: 180px;
+    margin-left: 1100px;
+    font-family: 'quicksand';
+    font-size: 60px;
+    margin-bottom: 0px;
+    width: fit-content;
+    position: absolute;
+}
