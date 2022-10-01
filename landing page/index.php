@@ -11,6 +11,7 @@ include 'koneksi.php'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favors</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
 
     <!-- font area -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
@@ -218,117 +219,96 @@ include 'koneksi.php'
    
      
 
-
-    <!-- FAQ -->
-    <div id="FAQ" class="faq">
+     <!-- FAQ -->
+     <div class="faq">
         <div class="faq-kiri">
             <div class="judul-faq">
                 <div class="bg">
                     <h1>FAQ'S</h1>
                     <p>( Frequently Asked Questions )</p>
                 </div>
-                <div class="faq-kotak-1">
-                    <div class="a">
-                        <div class="lingkaran-b">
-
-                        </div>
-
-                        <div class="tanya">
-                            <p>When should I order?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-kotak-2">
-                    <div class="a">
-                        <div class="lingkaran-b">
-
-                        </div>
-
-                        <div class="tanya-2">
-                            <p>Do you decorate or personalize your cakes?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-kotak-3">
-                    <div class="a">
-                        <div class="lingkaran-b">
-
-                        </div>
-
-                        <div class="tanya-3">
-                            <p>How many people do your cakes feed?</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="wrap-collabsible"> 
+                    <input id="collapsible" class="toggle" type="checkbox"> 
+                    <label for="collapsible" class="lbl-toggle">When should I order?</label><div class="collapsible-content">
+                      <div class="content-inner"><p> Unit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without plug-ins. Test-Driven Development.</p></div></div></div>
+                
+                      <div class="wrap-collabsible2"> 
+                        <input id="collapsible2" class="toggle2" type="checkbox"> 
+                        <label for="collapsible2" class="lbl-toggle2">Do you decorate or personalize your cakes?
+                        </label><div class="collapsible-content2">
+                          <div class="content-inner2"><p> Unit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without plug-ins. Test-Driven Development.</p></div></div></div>
+                
+                  <div class="wrap-collabsible3"> 
+                    <input id="collapsible3" class="toggle3" type="checkbox"> 
+                    <label for="collapsible3" class="lbl-toggle3">How many people do your cakes feed?</label><div class="collapsible-content3">
+                      <div class="content-inner3"><p> Unit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without plug-ins. Test-Driven Development.</p></div></div></div>
+                
+                      <div class="wrap-collabsible4"> 
+                        <input id="collapsible4" class="toggle4" type="checkbox"> 
+                        <label for="collapsible4" class="lbl-toggle4">Do your cakes freeze well?</label><div class="collapsible-content4">
+                          <div class="content-inner4"><p>Our cakes freeze beautifully up to three months</p></div></div></div>                
 
             </div>
         </div>
 
         <div class="faq-kanan">
-            <div class="faq-kotak-5">
-                <div class="a">
-                    <div class="lingkaran-a">
+            <div class="wrap-collabsible5"> 
+                <input id="collapsible5" class="toggle5" type="checkbox"> 
+                <label for="collapsible5" class="lbl-toggle5">Should I refrigerate my cake?</label><div class="collapsible-content5">
+                  <div class="content-inner5"><p>We do not recommend refrigerating the cakes; it seems to dry them out.</p></div></div></div>                
 
-                    </div>
 
-                    <div class="tanya-5">
-                        <p>Do you ship cakes?</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="faq-kotak-6">
-                <div class="a">
-                    <div class="lingkaran-a">
+                  <div class="wrap-collabsible6"> 
+                    <input id="collapsible6" class="toggle6" type="checkbox"> 
+                    <label for="collapsible6" class="lbl-toggle6">Do you sell fat free cakes?</label><div class="collapsible-content6">
+                      <div class="content-inner6"><p>We do not sell fat free cakes.</p></div></div></div>                
+    
 
-                    </div>
+                      
+                    <div class="wrap-collabsible7"> 
+                        <input id="collapsible7" class="toggle7" type="checkbox"> 
+                        <label for="collapsible7" class="lbl-toggle7">Do you sell sugar free cakes?</label><div class="collapsible-content7">
+                          <div class="content-inner7"><p> We do not sell sugar free cakes.</p></div></div></div>                
+        
+        
 
-                    <div class="tanya-6">
-                        <p>Do you sell sugar free cakes?</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-kotak-7">
-                <div class="a">
-                    <div class="lingkaran-a">
-
-                    </div>
-
-                    <div class="tanya-7">
-                        <p>How long does a cake stay fresh?</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-kotak-8">
-                <div class="a">
-                    <div class="lingkaran-a">
-
-                    </div>
-
-                    <div class="tanya-8">
-                        <p>Should I refrigerate my cake?</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-kotak-9">
-                <div class="a">
-                    <div class="lingkaran-a">
-
-                    </div>
-
-                    <div class="tanya-9">
-                        <p>What is your Refund Policy?</p>
-                    </div>
-                </div>
-            </div>
+                          <div class="wrap-collabsible8"> 
+                            <input id="collapsible8" class="toggle8" type="checkbox"> 
+                            <label for="collapsible8" class="lbl-toggle8">Do you ship cakes?</label><div class="collapsible-content8">
+                              <div class="content-inner8"><p>Yes. We can ship both pound and 7 inch layer cakes via UPS anywhere in the United States.</p></div></div></div>                
+            
+                              <div class="wrap-collabsible9"> 
+                                <input id="collapsible9" class="toggle9" type="checkbox"> 
+                                <label for="collapsible9" class="lbl-toggle9">What is your Refund Policy?</label><div class="collapsible-content9">
+                                  <div class="content-inner9"><p>At Piece of Cake, we take great pride in our products. We want all of our customers to be happy with their purchases. Since all of our baked products are made from scratch by real people, sometimes mistakes can happen. If we caused a problem with your order, we will do all we can to fix it. In order to qualify for a refund of a product picked up at one of our stores, we need to find out about a problem within 2 days of your purchase and we need enough detail to address the problem. If you discover there was a mistake on your end of a shipping or delivery order, such as an incomplete or incorrect address, please call us right away. In some instances, we can fix the delivery problem before your products leave our bakery. Once our products leave our baking facility, it is more difficult to solve problems and many delivery and handling issues are out of our control. We will do all that we can to make you a happy customer, but in some instances we will be unable to issue a refund.</p></div></div></div>                
+                
+                                  <div class="wrap-collabsible10"> 
+                                    <input id="collapsible10" class="toggle10" type="checkbox"> 
+                                    <label for="collapsible10" class="lbl-toggle10">How long does a cake stay fresh?</label><div class="collapsible-content10">
+                                      <div class="content-inner10"><p>As a general rule, our cakes stay fresh at room temperature up to one week.</p></div></div></div>                
+                    
+                                                
 
         </div>
     </div>
+
+
+
+    <script>
+        let myLabels = document.querySelectorAll('.lbl-toggle');
+
+        Array.from(myLabels).forEach(label => {
+        label.addEventListener('keydown', e => {
+            // 32 === spacebar
+            // 13 === enter
+            if (e.which === 32 || e.which === 13) {
+            e.preventDefault();
+            label.click();
+            };
+        });
+        });
+    </script>
 
 
     <!-- Foooter -->
