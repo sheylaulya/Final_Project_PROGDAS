@@ -124,7 +124,7 @@ include 'koneksi.php'
                 $sql = ("SELECT gambar from bestseller ORDER BY id DESC");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
-                   echo" gambar/$data[gambar]";}?>
+                   echo" dashboard-kue/gambar/$data[gambar]";}?>
                     ' alt='' width='300px'>
 
                     <img src='asset/curved-arrow-with-broken-line 2.png' alt=''>
@@ -193,7 +193,7 @@ include 'koneksi.php'
             </div>
 
             <div class='gambar'>
-                <img src='gambar/$data[gambar]' alt=''>
+                <img src='dashboard-kue/gambar/$data[gambar]' alt=''>
             </div>
 
             <div class='harga'>
