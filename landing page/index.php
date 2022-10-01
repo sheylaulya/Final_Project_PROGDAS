@@ -42,7 +42,7 @@ include 'koneksi.php'
                 <a href="">Sign Up</a>
             </div>
         </nav>
-
+        
         <div class="hero">
             <div class="row-1">
                 <h1>Make your Life Flavours</h1>
@@ -93,61 +93,64 @@ include 'koneksi.php'
 
         </div>
     </div>
-
     <div id="best-seller" class="best-seller">
         <div class="judul">
             <h2>Our Best Seller</h2>
         </div>
-
-        <div class="lagoon">
-            <div class="judul-lagoon">
-                <h2>Lagoon Wedding</h2>
-                <h4>Red Lava</h4>
-                <img src="asset/cake-lagoon1.png" alt="">
-                <div class="judul-text">
+        <div class='lagoon'> 
+         
+            <div class='judul-lagoon'>
+                <h2>
+                <?php
+                $sql = ("SELECT nama from bestseller ORDER BY id DESC");
+                $query = mysqli_query($connect, $sql);
+                while($data = mysqli_fetch_array($query)){
+                   echo" $data[nama]";}?>
+                   </h2>
+             
+            </div>   
+             <img class="logonih"src='asset/cake-lagoon1.png' alt=''>
+            <div class='judul-text'>     
+              
                     <p>Try It!</p>
                     <h3>A Nice Cake Made By Ours.</h3>
                 </div>
-            </div>
-            <div class="cakeall">
-                <a href="3">Buy Now</a>
-                <a href="2">Buy Now</a>
-                <div class="gambar-lagoon">
-                    <img src="asset/tony-eight-media--uZNyLofoPw-unsplash.jpg" alt="" width="300px">
-                    <img src="asset/curved-arrow-with-broken-line 2.png" alt="">
-                    <div class="cakelava">
+            <div class='cakeall'>
+                <a href='3'>Buy Now</a>
+                <div class='gambar-lagoon'>
+                    <img src='
+                    <?php
+                $sql = ("SELECT gambar from bestseller ORDER BY id DESC");
+                $query = mysqli_query($connect, $sql);
+                while($data = mysqli_fetch_array($query)){
+                   echo" gambar/$data[gambar]";}?>
+                    ' alt='' width='300px'>
 
-                        <img src="asset/unsplash_MJPr6nOdppw.png" alt="">
-
+                    <img src='asset/curved-arrow-with-broken-line 2.png' alt=''>
+                    <div class='cakelava'>
                     </div>
-                    <div class="harga">
-                        <h2>$.70.00</h2>
-                        <h2>$.79.99</h2>
-                        <div class="text-cake-lava">
-                            <h3>Red lava was made by our authentic cacao, a rich</h3>
-                            <h3>chocolate-flavoured sponge cake with a distinctive</h3>
-                            <h3>reddish colour, typically with layers of buttercream</h3>
-                            <h4>or cream cheese icing.</h4>
-                        </div>
-
-                    </div>
-
-                    <div class="textlagoon">
-                        <p>Lagoon name was made inspiration by seeing some</p>
-                        <p>lagoon in beach, and this cake was made by vanilla</p>
-                        <p>blue with white cream. This cake have a sweet taste</p>
-                        <p>with a nice decor flower.</p>
-
+                    <div class='harga'>
+                        <h2>
+                        <?php
+                $sql = ("SELECT harga from bestseller ORDER BY id DESC");
+                $query = mysqli_query($connect, $sql);
+                while($data = mysqli_fetch_array($query)){
+                   echo" $data[harga]";}?>
+                        </h2>
+                        <h2></h2>
                     </div>
 
+                    <div class='textlagoon'>
+                        <p>
+                        <?php
+                $sql = ("SELECT deskripsi from bestseller ORDER BY id DESC");
+                $query = mysqli_query($connect, $sql);
+                while($data = mysqli_fetch_array($query)){
+                   echo" $data[deskripsi]";}?>
+                        </p>
 
-                </div>
-                <div class="gambar-lava">
-                    <img src="asset/game-icons_cupcake.png" alt="">
-                    <div class="textgambar-lava">
-                        <h2>Other Variants</h2>
-                        <p>cup cake it’s our favorite mini cake</p>
                     </div>
+
                 </div>
 
             </div>
