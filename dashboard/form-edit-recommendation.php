@@ -220,7 +220,7 @@ if ( mysqli_num_rows($query) < 1){
                                                     <label class="col-form-label col-md-2">Id</label>
                                                     <div class="col-md-10">
                                                     <input type="text" name="id" value="<?php echo $data['id']?>"
-                                                            disabled class="form-control">
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -234,7 +234,7 @@ if ( mysqli_num_rows($query) < 1){
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Harga Awal</label>
                                                     <div class="col-md-10">
-                                                    <input type="text" name="nama"
+                                                    <input type="text" name="harga"
                                                             value="<?php echo $data['harga']?>" required="required"
                                                             class="form-control">
                                                     </div>
@@ -242,7 +242,7 @@ if ( mysqli_num_rows($query) < 1){
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Harga Diskon</label>
                                                     <div class="col-md-10">
-                                                    <input type="text" name="nama"
+                                                    <input type="text" name="diskon"
                                                             value="<?php echo $data['diskon']?>" required="required"
                                                             class="form-control">
                                                     </div>

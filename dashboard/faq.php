@@ -211,8 +211,6 @@
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
-                                                <th>Gambar</th>
-                                                <th>Nama</th>
                                                 <th>Pertanyaan</th>
                                                 <th>Jawaban</th>
                                                 <th class="text-end">Action</th>
@@ -221,15 +219,6 @@
                                         <tbody>
                                             <tr>
                                                 <td>001</td>
-                                                <td><a href="general.php" class="avatar avatar-sm me-2"><img
-                                                            class="avatar-img rounded-circle"
-                                                            src="assets/img/profiles/avatar-03.jpg"
-                                                            alt="User Image"></a></td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="general.php">John Lee </a>
-                                                    </h2>
-                                                </td>
                                                 <td>01 Oct 2019</td>
                                                 <td>01.00 PM</td>
                                                 <td class="text-end">

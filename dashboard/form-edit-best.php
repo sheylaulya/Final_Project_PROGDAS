@@ -220,7 +220,7 @@ if ( mysqli_num_rows($query) < 1){
                                                     <label class="col-form-label col-md-2">Id</label>
                                                     <div class="col-md-10">
                                                         <input type="text" name="id" value="<?php echo $data['id']?>"
-                                                            disabled class="form-control">
+                                                             class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -252,7 +252,7 @@ if ( mysqli_num_rows($query) < 1){
                                                     <div class="col-md-10">
                                                         <img src="gambar/<?php echo $data['gambar']; ?>"
                                                             style="width: 70px; margin-bottom: 30px;">
-                                                        <input type="file" name="gambar" class="form-control">
+                                                        <input type="file" name="gambar" class="form-control" value="<?php echo $data['gambar'];?>">
                                                     </div>
                                                     <input type="submit"
                                                         style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;"

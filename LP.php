@@ -43,7 +43,7 @@ include 'koneksi.php'
                 <a href="">Sign Up</a>
             </div>
         </nav>
-        
+
         <div class="hero">
             <div class="row-1">
                 <h1>Make your Life Flavours</h1>
@@ -98,24 +98,24 @@ include 'koneksi.php'
         <div class="judul">
             <h2>Our Best Seller</h2>
         </div>
-        <div class='lagoon'> 
-         
+        <div class='lagoon'>
+
             <div class='judul-lagoon'>
                 <h2>
-                <?php
+                    <?php
                 $sql = ("SELECT nama from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
                    echo" $data[nama]";}?>
-                   </h2>
-             
-            </div>   
-             <img class="logonih"src='asset/cake-lagoon1.png' alt=''>
-            <div class='judul-text'>     
-              
-                    <p>Try It!</p>
-                    <h3>A Nice Cake Made By Ours.</h3>
-                </div>
+                </h2>
+
+            </div>
+            <img class="logonih" src='asset/cake-lagoon1.png' alt=''>
+            <div class='judul-text'>
+
+                <p>Try It!</p>
+                <h3>A Nice Cake Made By Ours.</h3>
+            </div>
             <div class='cakeall'>
                 <a href='3'>Buy Now</a>
                 <div class='gambar-lagoon'>
@@ -132,7 +132,7 @@ include 'koneksi.php'
                     </div>
                     <div class='harga'>
                         <h2>
-                        <?php
+                            <?php
                 $sql = ("SELECT harga from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
@@ -143,7 +143,7 @@ include 'koneksi.php'
 
                     <div class='textlagoon'>
                         <p>
-                        <?php
+                            <?php
                 $sql = ("SELECT deskripsi from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
@@ -162,21 +162,22 @@ include 'koneksi.php'
 
     <!-- recomendded product -->
     <div id="rekom-produk">
-    <div class="rec-product">
-        <div class="title-rp">
-            <p> create a story</p>
-            <h1>with <span>FAVORS</span></h1>
-        </div>
-        <div class="rec-pro">
-            <div class="garis">
-                <p>Recommended Product
-                    <i class="fa-solid fa-cake-candles"></i>
-                </p>
+        <div class="rec-product">
+            <div class="title-rp">
+                <p> create a story</p>
+                <h1>with <span>FAVORS</span></h1>
             </div>
-        </div>
+            <div class="rec-pro">
+                <div class="garis">
+                    <p>Recommended Product
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </p>
+                </div>
+            </div>
 
-    </div><div class='wrapper'>        
-    <?php
+        </div>
+        <div class='wrapper'>
+            <?php
      $sql = ("SELECT * from rekomen");
      $query = mysqli_query($connect, $sql);
      while($data = mysqli_fetch_array($query)){
@@ -214,81 +215,150 @@ include 'koneksi.php'
         </div>";
     }
     ?>
+        </div>
     </div>
-    </div>
-   
-     
 
-     <!-- FAQ -->
-     <div class="faq">
+
+
+    <!-- FAQ -->
+    <div class="faq">
         <div class="faq-kiri">
             <div class="judul-faq">
                 <div class="bg">
                     <h1>FAQ'S</h1>
                     <p>( Frequently Asked Questions )</p>
                 </div>
-                <div class="wrap-collabsible"> 
-                    <input id="collapsible" class="toggle" type="checkbox"> 
-                    <label for="collapsible" class="lbl-toggle">When should I order?</label><div class="collapsible-content">
-                      <div class="content-inner"><p> Unit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without plug-ins. Test-Driven Development.</p></div></div></div>
-                
-                      <div class="wrap-collabsible2"> 
-                        <input id="collapsible2" class="toggle2" type="checkbox"> 
-                        <label for="collapsible2" class="lbl-toggle2">Do you decorate or personalize your cakes?
-                        </label><div class="collapsible-content2">
-                          <div class="content-inner2"><p> Unit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without plug-ins. Test-Driven Development.</p></div></div></div>
-                
-                  <div class="wrap-collabsible3"> 
-                    <input id="collapsible3" class="toggle3" type="checkbox"> 
-                    <label for="collapsible3" class="lbl-toggle3">How many people do your cakes feed?</label><div class="collapsible-content3">
-                      <div class="content-inner3"><p> Unit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without plug-ins. Test-Driven Development.</p></div></div></div>
-                
-                      <div class="wrap-collabsible4"> 
-                        <input id="collapsible4" class="toggle4" type="checkbox"> 
-                        <label for="collapsible4" class="lbl-toggle4">Do your cakes freeze well?</label><div class="collapsible-content4">
-                          <div class="content-inner4"><p>Our cakes freeze beautifully up to three months</p></div></div></div>                
+                <div class="wrap-collabsible">
+            
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <?php
+     $sql = ("SELECT * from rekomen");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                    <label for='collapsible' class='lbl-toggle'>When should I order?</label>
+                    <div class='collapsible-content'>
+                        <div class='content-inner'>
+                            <p> Unit is by calling one of the object that are embedded in JavaScript, and faster
+                                JavaScript program could also used with its elegant, well documented, and functional
+                                programming using JS, HTML pages Modernizr is a popular browsers without plug-ins.
+                                Test-Driven Development.</p>
+                        </div>
+                    </div>
+                </div>
+                "
+     }
+     ?>
+
+                <div class="wrap-collabsible2">
+                    <input id="collapsible2" class="toggle2" type="checkbox">
+                    <label for="collapsible2" class="lbl-toggle2">Do you decorate or personalize your cakes?
+                    </label>
+                    <div class="collapsible-content2">
+                        <div class="content-inner2">
+                            <p> Unit is by calling one of the object that are embedded in JavaScript, and faster
+                                JavaScript program could also used with its elegant, well documented, and functional
+                                programming using JS, HTML pages Modernizr is a popular browsers without plug-ins.
+                                Test-Driven Development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-collabsible3">
+                    <input id="collapsible3" class="toggle3" type="checkbox">
+                    <label for="collapsible3" class="lbl-toggle3">How many people do your cakes feed?</label>
+                    <div class="collapsible-content3">
+                        <div class="content-inner3">
+                            <p> Unit is by calling one of the object that are embedded in JavaScript, and faster
+                                JavaScript program could also used with its elegant, well documented, and functional
+                                programming using JS, HTML pages Modernizr is a popular browsers without plug-ins.
+                                Test-Driven Development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-collabsible4">
+                    <input id="collapsible4" class="toggle4" type="checkbox">
+                    <label for="collapsible4" class="lbl-toggle4">Do your cakes freeze well?</label>
+                    <div class="collapsible-content4">
+                        <div class="content-inner4">
+                            <p>Our cakes freeze beautifully up to three months</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
 
         <div class="faq-kanan">
-            <div class="wrap-collabsible5"> 
-                <input id="collapsible5" class="toggle5" type="checkbox"> 
-                <label for="collapsible5" class="lbl-toggle5">Should I refrigerate my cake?</label><div class="collapsible-content5">
-                  <div class="content-inner5"><p>We do not recommend refrigerating the cakes; it seems to dry them out.</p></div></div></div>                
+            <div class="wrap-collabsible5">
+                <input id="collapsible5" class="toggle5" type="checkbox">
+                <label for="collapsible5" class="lbl-toggle5">Should I refrigerate my cake?</label>
+                <div class="collapsible-content5">
+                    <div class="content-inner5">
+                        <p>We do not recommend refrigerating the cakes; it seems to dry them out.</p>
+                    </div>
+                </div>
+            </div>
 
 
 
-                  <div class="wrap-collabsible6"> 
-                    <input id="collapsible6" class="toggle6" type="checkbox"> 
-                    <label for="collapsible6" class="lbl-toggle6">Do you sell fat free cakes?</label><div class="collapsible-content6">
-                      <div class="content-inner6"><p>We do not sell fat free cakes.</p></div></div></div>                
-    
+            <div class="wrap-collabsible6">
+                <input id="collapsible6" class="toggle6" type="checkbox">
+                <label for="collapsible6" class="lbl-toggle6">Do you sell fat free cakes?</label>
+                <div class="collapsible-content6">
+                    <div class="content-inner6">
+                        <p>We do not sell fat free cakes.</p>
+                    </div>
+                </div>
+            </div>
 
-                      
-                    <div class="wrap-collabsible7"> 
-                        <input id="collapsible7" class="toggle7" type="checkbox"> 
-                        <label for="collapsible7" class="lbl-toggle7">Do you sell sugar free cakes?</label><div class="collapsible-content7">
-                          <div class="content-inner7"><p> We do not sell sugar free cakes.</p></div></div></div>                
-        
-        
 
-                          <div class="wrap-collabsible8"> 
-                            <input id="collapsible8" class="toggle8" type="checkbox"> 
-                            <label for="collapsible8" class="lbl-toggle8">Do you ship cakes?</label><div class="collapsible-content8">
-                              <div class="content-inner8"><p>Yes. We can ship both pound and 7 inch layer cakes via UPS anywhere in the United States.</p></div></div></div>                
-            
-                              <div class="wrap-collabsible9"> 
-                                <input id="collapsible9" class="toggle9" type="checkbox"> 
-                                <label for="collapsible9" class="lbl-toggle9">What is your Refund Policy?</label><div class="collapsible-content9">
-                                  <div class="content-inner9"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro accusamus atque quae alias distinctio maxime excepturi provident dolor quos dolore.</p></div></div></div>                
-                
-                                  <div class="wrap-collabsible10"> 
-                                    <input id="collapsible10" class="toggle10" type="checkbox"> 
-                                    <label for="collapsible10" class="lbl-toggle10">How long does a cake stay fresh?</label><div class="collapsible-content10">
-                                      <div class="content-inner10"><p>As a general rule, our cakes stay fresh at room temperature up to one week.</p></div></div></div>                
-                    
-                                                
+
+            <div class="wrap-collabsible7">
+                <input id="collapsible7" class="toggle7" type="checkbox">
+                <label for="collapsible7" class="lbl-toggle7">Do you sell sugar free cakes?</label>
+                <div class="collapsible-content7">
+                    <div class="content-inner7">
+                        <p> We do not sell sugar free cakes.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="wrap-collabsible8">
+                <input id="collapsible8" class="toggle8" type="checkbox">
+                <label for="collapsible8" class="lbl-toggle8">Do you ship cakes?</label>
+                <div class="collapsible-content8">
+                    <div class="content-inner8">
+                        <p>Yes. We can ship both pound and 7 inch layer cakes via UPS anywhere in the United States.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-collabsible9">
+                <input id="collapsible9" class="toggle9" type="checkbox">
+                <label for="collapsible9" class="lbl-toggle9">What is your Refund Policy?</label>
+                <div class="collapsible-content9">
+                    <div class="content-inner9">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro accusamus atque quae alias
+                            distinctio maxime excepturi provident dolor quos dolore.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-collabsible10">
+                <input id="collapsible10" class="toggle10" type="checkbox">
+                <label for="collapsible10" class="lbl-toggle10">How long does a cake stay fresh?</label>
+                <div class="collapsible-content10">
+                    <div class="content-inner10">
+                        <p>As a general rule, our cakes stay fresh at room temperature up to one week.</p>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </div>
@@ -299,14 +369,14 @@ include 'koneksi.php'
         let myLabels = document.querySelectorAll('.lbl-toggle');
 
         Array.from(myLabels).forEach(label => {
-        label.addEventListener('keydown', e => {
-            // 32 === spacebar
-            // 13 === enter
-            if (e.which === 32 || e.which === 13) {
-            e.preventDefault();
-            label.click();
-            };
-        });
+            label.addEventListener('keydown', e => {
+                // 32 === spacebar
+                // 13 === enter
+                if (e.which === 32 || e.which === 13) {
+                    e.preventDefault();
+                    label.click();
+                };
+            });
         });
     </script>
 
