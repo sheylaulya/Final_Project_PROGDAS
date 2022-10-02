@@ -31,10 +31,10 @@
         <div class="header">
 
             <div class="header-left">
-                <a href="index.php" class="logo">
-                    <h1 style="margin-top: 20px; font-family:'quicksand'; color: #680a83; font-weight: 800;">Favors</h1>
+                <a href="tampilan-awal.php" class="logo">
+                    <h1 style="margin-top: 20px; font-family:'quicksand'; color: #680a83; font-weight: 700;">Favors</h1>
                 </a>
-                <a href="index.php" class="logo logo-small">
+                <a href="tampilan-awal.php" class="logo logo-small">
                     <img src="assets/img/Untitled design.png" alt="Logo" width="30" height="30">
                 </a>
             </div>
@@ -137,8 +137,22 @@
                     </div>
                 </li>
 
-                </a>
-
+                <div class="dropdown-menu">
+                    <div class="user-header">
+                        <div class="avatar avatar-sm">
+                            <img src="assets/img/profiles/avatar-01.jpg" alt="User Image"
+                                class="avatar-img rounded-circle">
+                        </div>
+                        <div class="user-text">
+                            <h6>Seema Sisty</h6>
+                            <p class="text-muted mb-0">Administrator</p>
+                        </div>
+                    </div>
+                    <a class="dropdown-item" href="general.php">My Profile</a>
+                    <a class="dropdown-item" href="general.php">Account Settings</a>
+                    <a class="dropdown-item" href="login.php">Logout</a>
+                </div>
+                </li>
 
             </ul>
 
@@ -152,18 +166,25 @@
                         <li class="menu-title">
                         </li>
                         <li>
-                        </li>
+
                         <li class="submenu">
                             <a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Tambah Data</span>
                                 <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="hero.php" class="active">Hero</a></li>
-                                <li><a href="best.php" style="color: black;">Best Seller</a></li>
+                                <li><a href="tampilan-awal.php" class="active"
+                                        style="color: #ffff; font-family: 'quicksand'; font-weight: 800; background-color: #680a83; border-radius: 0px 50px 50px 0px;">Tampilan Awal</a>
+                                </li>
+                                <li><a href="best.php">Best Seller</a></li>
                                 <li><a href="recommendation.php">Recommendation</a></li>
                                 <li><a href="faq.php">FAQ</a></li>
                             </ul>
                         </li>
 
+
+
+                    </ul>
+                    </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -174,84 +195,79 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
+                            <h3 class="page-title">Tampilan Awal</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Tampilan Awal </li>
+                                <li><a href="tambah-data-tampilan.html" style="margin-left: 940px; color:#680a83">Tambah Data
+                                        +</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 d-flex">
-                        <div class="content container-fluid">
 
-                            <div class="page-header">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <h3 class="page-title">Tambah Data Hero</h3>
-                                        <ul class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item active">Tambah Data Hero</li>
-                                        </ul>
-                                    </div>
+                        <div class="card card-table flex-fill">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-center mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Gambar</th>
+                                                <th>Nama</th>
+                                                <th class="text-end">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>001</td>
+                                                <td><a href="general.php" class="avatar avatar-sm me-2"><img
+                                                            class="avatar-img rounded-circle"
+                                                            src="assets/img/profiles/avatar-03.jpg"
+                                                            alt="User Image"></a></td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a href="general.php">John Lee <span>#0001</span></a>
+                                                    </h2>
+                                                </td>
+                                                <td class="text-end">
+                                                    <div class="actions">
+                                                        <a href="form-edit-tampilan.php"
+                                                            class="btn btn-sm bg-success-light me-2">
+                                                            <i class="fe fe-pencil"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light">
+                                                            <i class="fe fe-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                 </div>
+                                </td>
+                                </tr>
+                                </tbody>
+                                </table>
                             </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">Tambah Data</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <form action="#">
-                                                <div class="form-group row">
-                                                    <label class="col-form-label col-md-2">Id</label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="id">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-form-label col-md-2">Nama</label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="nama">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-form-label col-md-2">Edisi</label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control" name="nama">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-form-label col-md-2">Gambar</label>
-                                                    <div class="col-md-10">
-                                                        <input class="form-control" type="file" name="gambar">
-                                                    </div>
-                                                    <input type="submit" name="submit" style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;">
-                                                </div>
-                                            </form>
-                                        </div>
-                                        </td>
-                                        </tr>
-                                        </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
+    </div>
+
+    </div>
 
 
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
 
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
