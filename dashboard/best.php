@@ -231,7 +231,7 @@ include 'koneksi.php'
                         echo"
                         <tr>
                             <td>$data[id]</td>
-                            <td> <img src='gambar/$data[gambar]' width ='50px'></td>   
+                            <td> <img src='gambar/$data[upload]' width ='50px'></td>   
                             <td>$data[nama]</td>
                             <td>$data[deskripsi]</td>
                             <td>$data[harga]</td>

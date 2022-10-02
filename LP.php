@@ -121,10 +121,10 @@ include 'koneksi.php'
                 <div class='gambar-lagoon'>
                     <img src='
                     <?php
-                $sql = ("SELECT gambar from bestseller ORDER BY id DESC LIMIT 1");
+                $sql = ("SELECT upload from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
-                   echo" dashboard/gambar/$data[gambar]";}?>
+                   echo" dashboard/gambar/$data[upload]";}?>
                     ' alt='' width='300px'>
 
                     <img src='asset/curved-arrow-with-broken-line 2.png' alt=''>

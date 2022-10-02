@@ -5,6 +5,18 @@
     --main-color2:#325288;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-color1);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -726,7 +738,7 @@ display: flex;
     justify-content: start;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    margin-left: 170px;
+    margin-left: 140px;
 }
 
 .chart {
