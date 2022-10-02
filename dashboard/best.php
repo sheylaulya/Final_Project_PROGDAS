@@ -238,11 +238,11 @@ include 'koneksi.php'
                             <td>$data[harga]</td>
                             <td>
                             <div class='opsi'>
-                            <a href='form-edit-best.html?id=".$data ['id']."'  
+                            <a href='form-edit-best.php?id=".$data ['id']."'  
                             class='btn btn-sm bg-success-light me-2'>
                             <i class='fe fe-pencil'></i ></a>
 
-                            <a href='hapus-best.php?id=".$data ['id']."'
+                            <a href='delete-best.php?id=".$data ['id']."'
                             class='btn btn-sm bg-danger-light'>
                             <i class='fe fe-trash'></i></a>
                             </td>

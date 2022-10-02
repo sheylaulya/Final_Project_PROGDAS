@@ -103,7 +103,7 @@ include 'koneksi.php'
             <div class='judul-lagoon'>
                 <h2>
                 <?php
-                $sql = ("SELECT nama from bestseller ORDER BY id DESC");
+                $sql = ("SELECT nama from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
                    echo" $data[nama]";}?>
@@ -121,10 +121,10 @@ include 'koneksi.php'
                 <div class='gambar-lagoon'>
                     <img src='
                     <?php
-                $sql = ("SELECT gambar from bestseller ORDER BY id DESC");
+                $sql = ("SELECT gambar from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
-                   echo" dashboard-kue/gambar/$data[gambar]";}?>
+                   echo" dashboard/gambar/$data[gambar]";}?>
                     ' alt='' width='300px'>
 
                     <img src='asset/curved-arrow-with-broken-line 2.png' alt=''>
@@ -133,7 +133,7 @@ include 'koneksi.php'
                     <div class='harga'>
                         <h2>
                         <?php
-                $sql = ("SELECT harga from bestseller ORDER BY id DESC");
+                $sql = ("SELECT harga from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
                    echo" $data[harga]";}?>
@@ -144,7 +144,7 @@ include 'koneksi.php'
                     <div class='textlagoon'>
                         <p>
                         <?php
-                $sql = ("SELECT deskripsi from bestseller ORDER BY id DESC");
+                $sql = ("SELECT deskripsi from bestseller ORDER BY id DESC LIMIT 1");
                 $query = mysqli_query($connect, $sql);
                 while($data = mysqli_fetch_array($query)){
                    echo" $data[deskripsi]";}?>
@@ -193,7 +193,7 @@ include 'koneksi.php'
             </div>
 
             <div class='gambar'>
-                <img src='dashboard-kue/gambar/$data[gambar]' alt=''>
+                <img src='dashboard/gambar/$data[gambar]' alt=''>
             </div>
 
             <div class='harga'>
