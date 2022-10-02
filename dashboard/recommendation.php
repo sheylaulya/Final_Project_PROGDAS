@@ -221,31 +221,32 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>001</td>
-                                                <td><a href="general.php" class="avatar avatar-sm me-2"><img
-                                                            class="avatar-img rounded-circle"
-                                                            src="assets/img/profiles/avatar-03.jpg"
-                                                            alt="User Image"></a></td>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="general.php">John Lee</a>
-                                                    </h2>
-                                                </td>
-                                                <td>01 Oct 2019</td>
-                                                <td>01.00 PM</td>
-                                                <td class="text-end">
-                                                    <div class="actions">
-                                                        <a href="form-edit-recommendation.php"
-                                                            class="btn btn-sm bg-success-light me-2">
-                                                            <i class="fe fe-pencil"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-sm bg-danger-light">
-                                                            <i class="fe fe-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                        <?php
+                                        include 'koneksi.php';
+                    $sql = ("SELECT * FROM rekomen");
+                    $query = mysqli_query($connect, $sql);
+                    while($data = mysqli_fetch_array($query)){
+                        echo"
+                        <tr>
+                            <td>$data[id]</td>
+                            <td> <img src='gambar/$data[gambar]' width ='50px'></td>   
+                            <td>$data[nama]</td>
+                            <td>$data[harga]</td>
+                            <td>$data[diskon]</td>
+                            <td>
+                            <div class='opsi'>
+                            <a href='form-edit-recommendation.php?id=".$data ['id']."'  
+                            class='btn btn-sm bg-success-light me-2'>
+                            <i class='fe fe-pencil'></i ></a>
+
+                            <a href='delete-rekom.php?id=".$data ['id']."'
+                            class='btn btn-sm bg-danger-light'>
+                            <i class='fe fe-trash'></i></a>
+                            </td>
+                         </tr>
+                      ";
+            } 
+                    ?>
                                 </div>
                                 </td>
                                 </tr>

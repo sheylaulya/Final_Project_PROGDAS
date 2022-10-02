@@ -1,10 +1,24 @@
+<?php
+include 'koneksi.php';
+
+
+$id= $_GET['id'];
+$sql = "SELECT*FROM rekomen WHERE id = '$id'";
+$query = mysqli_query($connect, $sql);
+$data = mysqli_fetch_assoc($query);
+
+if ( mysqli_num_rows($query) < 1){ 
+    die ("data tidak ditemukan...");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Dreamchat - Dashboard</title>
+    <title>Favors - Dashboard</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
@@ -201,37 +215,46 @@
                                             <h4 class="card-title">Edit Data</h4>
                                         </div>
                                         <div class="card-body">
-                                            <form action="#">
+                                            <form action="update-rekom.php" method="post">
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Id</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                    <input type="text" name="id" value="<?php echo $data['id']?>"
+                                                            disabled class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Nama</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                    <input type="text" name="nama"
+                                                            value="<?php echo $data['nama']?>" required="required"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Harga Awal</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                    <input type="text" name="nama"
+                                                            value="<?php echo $data['harga']?>" required="required"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Harga Diskon</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                    <input type="text" name="nama"
+                                                            value="<?php echo $data['diskon']?>" required="required"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Gambar</label>
                                                     <div class="col-md-10">
-                                                        <input class="form-control" type="file">
+                                                    <img src="gambar/<?php echo $data['gambar']; ?>"
+                                                            style="width: 70px; margin-bottom: 30px;">
+                                                        <input type="file" name="gambar" class="form-control">
                                                     </div>
-                                                    <input type="submit" name="submit" style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;">
+                                                    <input type="submit" name="simpan" value="simpan" style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;">
                                                 </div>
                                             </form>
                                         </div>
