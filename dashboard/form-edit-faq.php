@@ -1,3 +1,17 @@
+<?php
+include 'koneksi.php';
+
+
+$id= $_GET['id'];
+$sql = "SELECT*FROM faq WHERE id = '$id'";
+$query = mysqli_query($connect, $sql);
+$data = mysqli_fetch_assoc($query);
+
+if ( mysqli_num_rows($query) < 1){ 
+    die ("data tidak ditemukan...");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -201,37 +215,28 @@
                                             <h4 class="card-title">Edit Data</h4>
                                         </div>
                                         <div class="card-body">
-                                            <form action="#">
+                                            <form action="update-faq.php" method="post">
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Id</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" value="<?php echo $data['id']?>">
                                                     </div>
                                                 </div>
-                                                <div class="form-group row">
-                                                    <label class="col-form-label col-md-2">Nama</label>
-                                                    <div class="col-md-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
+
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Pertanyaan</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" value="<?php echo $data['pertanyaan']?>">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Jawaban</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" value="<?php echo $data['jawaban']?>">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-form-label col-md-2">Gambar</label>
-                                                    <div class="col-md-10">
-                                                        <input class="form-control" type="file">
-                                                    </div>
-                                                    <input type="submit" name="submit" style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;" >
+                                                    <input type="submit" name="simpan" value="simpan" style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;" >
                                                 </div>
                                             </form>
                                         </div>

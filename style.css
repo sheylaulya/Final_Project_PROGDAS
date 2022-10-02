@@ -705,7 +705,7 @@ display: flex;
     height: 45px;
     border-radius: 20px;
     margin-top: 20px;
-    margin-left: 545px;
+    margin-left: 505px;
 }
 .rec-pro .garis p {
     background-color: transparent;
@@ -726,8 +726,7 @@ display: flex;
     justify-content: start;
     flex-wrap: wrap;
     margin-bottom: 100px;
-    overflow: scroll;
-    margin-left: 70px;
+    margin-left: 170px;
 }
 
 .chart {

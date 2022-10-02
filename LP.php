@@ -229,210 +229,255 @@ include 'koneksi.php'
                     <p>( Frequently Asked Questions )</p>
                 </div>
                 <div class="wrap-collabsible">
-            
+
                     <input id="collapsible" class="toggle" type="checkbox">
                     <?php
-     $sql = ("SELECT * from rekomen");
+     $sql = ("SELECT * from faq WHERE id='1'");
      $query = mysqli_query($connect, $sql);
      while($data = mysqli_fetch_array($query)){
         echo"
-                    <label for='collapsible' class='lbl-toggle'>When should I order?</label>
+                    <label for='collapsible' class='lbl-toggle'> $data[pertanyaan] </label>
                     <div class='collapsible-content'>
                         <div class='content-inner'>
-                            <p> Unit is by calling one of the object that are embedded in JavaScript, and faster
-                                JavaScript program could also used with its elegant, well documented, and functional
-                                programming using JS, HTML pages Modernizr is a popular browsers without plug-ins.
-                                Test-Driven Development.</p>
+                            <p> $data[jawaban]</p>
                         </div>
                     </div>
                 </div>
-                "
+                ";
      }
      ?>
 
-                <div class="wrap-collabsible2">
-                    <input id="collapsible2" class="toggle2" type="checkbox">
-                    <label for="collapsible2" class="lbl-toggle2">Do you decorate or personalize your cakes?
-                    </label>
-                    <div class="collapsible-content2">
-                        <div class="content-inner2">
-                            <p> Unit is by calling one of the object that are embedded in JavaScript, and faster
-                                JavaScript program could also used with its elegant, well documented, and functional
-                                programming using JS, HTML pages Modernizr is a popular browsers without plug-ins.
-                                Test-Driven Development.</p>
+                    <div class="wrap-collabsible2">
+                        <input id="collapsible2" class="toggle2" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='2'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                    <label for='collapsible2' class='lbl-toggle2'>$data[pertanyaan]</label>
+                    <div class='collapsible-content2'>
+                        <div class='content-inner2'>
+                            <p>$data[jawaban]</p>
                         </div>
                     </div>
                 </div>
+                ";
+    }
+    ?>
+                        <div class="wrap-collabsible3">
+                            <input id="collapsible3" class="toggle3" type="checkbox">
+                            <?php
+     $sql = ("SELECT * from faq WHERE id='3'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                            <label for='collapsible3' class='lbl-toggle3'>$data[pertanyaan]</label>
+                            <div class='collapsible-content3'>
+                                <div class='content-inner3'>
+                                    <p>$data[jawaban]</p>
+                                </div>
+                            </div>
+                        </div>
+                ";
+     }
+     ?>
 
-                <div class="wrap-collabsible3">
-                    <input id="collapsible3" class="toggle3" type="checkbox">
-                    <label for="collapsible3" class="lbl-toggle3">How many people do your cakes feed?</label>
-                    <div class="collapsible-content3">
-                        <div class="content-inner3">
-                            <p> Unit is by calling one of the object that are embedded in JavaScript, and faster
-                                JavaScript program could also used with its elegant, well documented, and functional
-                                programming using JS, HTML pages Modernizr is a popular browsers without plug-ins.
-                                Test-Driven Development.</p>
+                        <div class="wrap-collabsible4">
+                            <input id="collapsible4" class="toggle4" type="checkbox">
+                            <?php
+     $sql = ("SELECT * from faq WHERE id='4'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                            <label for='collapsible4' class='lbl-toggle4'>$data[pertanyaan]</label>
+                            <div class='collapsible-content4'>
+                                <div class='content-inner4'>
+                                    <p>$data[jawaban]</p>
+                                </div>
+                            </div>
+                        </div>
+                        ";}?>
+                    </div>
+                </div>
+
+                <div class="faq-kanan">
+                    <div class="wrap-collabsible5">
+                        <input id="collapsible5" class="toggle5" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='5'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                        <label for='collapsible5' class='lbl-toggle5'>$data[pertanyaan]</label>
+                        <div class='collapsible-content5'>
+                            <div class='content-inner5'>
+                                <p>$data[jawaban]</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    ";}?>
 
-                <div class="wrap-collabsible4">
-                    <input id="collapsible4" class="toggle4" type="checkbox">
-                    <label for="collapsible4" class="lbl-toggle4">Do your cakes freeze well?</label>
-                    <div class="collapsible-content4">
-                        <div class="content-inner4">
-                            <p>Our cakes freeze beautifully up to three months</p>
+
+
+                    <div class="wrap-collabsible6">
+                        <input id="collapsible6" class="toggle6" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='6'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                        <label for='collapsible6' class='lbl-toggle6'>$data[pertanyaan]</label>
+                        <div class='collapsible-content6'>
+                            <div class='content-inner6'>
+                                <p>$data[jawaban]</p>
+                            </div>
                         </div>
                     </div>
+                    ";}?>
+
+
+
+                    <div class="wrap-collabsible7">
+                        <input id="collapsible7" class="toggle7" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='7'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                        <label for='collapsible7' class='lbl-toggle7'>$data[pertanyaan]</label>
+                        <div class='collapsible-content7'>
+                            <div class='content-inner7'>
+                                <p>$data[jawaban]</p>
+                            </div>
+                        </div>
+                    </div>
+                    ";}?>
+
+
+
+                    <div class="wrap-collabsible8">
+                        <input id="collapsible8" class="toggle8" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='8'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                        <label for='collapsible8' class='lbl-toggle8'>$data[pertanyaan]</label>
+                        <div class='collapsible-content8'>
+                            <div class='content-inner8'>
+                                <p>$data[jawaban]</p>
+                            </div>
+                        </div>
+                    </div>
+                    ";}?>
+
+                    <div class="wrap-collabsible9">
+                        <input id="collapsible9" class="toggle9" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='9'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                        <label for='collapsible9' class='lbl-toggle9'>$data[pertanyaan]</label>
+                        <div class='collapsible-content9'>
+                            <div class='content-inner9'>
+                                <p>$data[jawaban]</p>
+                            </div>
+                        </div>
+                    </div>
+                    ";}?>
+
+                    <div class="wrap-collabsible10">
+                        <input id="collapsible10" class="toggle10" type="checkbox">
+                        <?php
+     $sql = ("SELECT * from faq WHERE id='10'");
+     $query = mysqli_query($connect, $sql);
+     while($data = mysqli_fetch_array($query)){
+        echo"
+                        <label for='collapsible10' class='lbl-toggle10'>$data[pertanyaan]</label>
+                        <div class='collapsible-content10'>
+                            <div class='content-inner10'>
+                                <p>$data[jawaban]</p>
+                            </div>
+                        </div>
+                    </div>
+                    ";}?>
+
+
+
                 </div>
+            </div>
+
+
+
+            <script>
+                let myLabels = document.querySelectorAll('.lbl-toggle');
+
+                Array.from(myLabels).forEach(label => {
+                    label.addEventListener('keydown', e => {
+                        // 32 === spacebar
+                        // 13 === enter
+                        if (e.which === 32 || e.which === 13) {
+                            e.preventDefault();
+                            label.click();
+                        };
+                    });
+                });
+            </script>
+
+
+            <!-- Foooter -->
+            <div id="footer" class="footer">
+                <div class="content">
+                    <div class="favors">
+                        <p>Favors</p>
+                        <ul>
+
+                            <li><a href="#index">About Us</a></li>
+                            <li><a href="">Menu</a></li>
+                            <li><a href="#best-seller">Best Seller</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="help-center">
+                        <p>Help Center</p>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="best_seller">
+                        <p>Best Seller</p>
+                        <ul>
+                            <li><a href="#best-seller">Wedding Cake</a></li>
+                            <li><a href="#best-seller">Birthday cake</a></li>
+                            <li><a href="#best-seller">Cup Cake</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="asset/Desain tanpa judul (1).png" alt=""> <br>
+                        <div class="copyright">
+                            <img src="asset/copyright (1).png" alt="">
+                            <p class="copyright-text">1997-now, Favors</p>
+                        </div>
+                    </div>
+                    <div class="sosmed">
+                        <p>Contact Us</p>
+                        <ul>
+                            <li> <img src="asset/instagram.png" alt=""></li>
+                            <li> <img src="asset/twitter.png" alt=""></li>
+                            <li> <img src="asset/facebook.png" alt=""></li>
+                            <li> <img src="asset/tiktok.png" alt=""></li>
+                            <li> <img src="asset/email.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
 
             </div>
         </div>
-
-        <div class="faq-kanan">
-            <div class="wrap-collabsible5">
-                <input id="collapsible5" class="toggle5" type="checkbox">
-                <label for="collapsible5" class="lbl-toggle5">Should I refrigerate my cake?</label>
-                <div class="collapsible-content5">
-                    <div class="content-inner5">
-                        <p>We do not recommend refrigerating the cakes; it seems to dry them out.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="wrap-collabsible6">
-                <input id="collapsible6" class="toggle6" type="checkbox">
-                <label for="collapsible6" class="lbl-toggle6">Do you sell fat free cakes?</label>
-                <div class="collapsible-content6">
-                    <div class="content-inner6">
-                        <p>We do not sell fat free cakes.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="wrap-collabsible7">
-                <input id="collapsible7" class="toggle7" type="checkbox">
-                <label for="collapsible7" class="lbl-toggle7">Do you sell sugar free cakes?</label>
-                <div class="collapsible-content7">
-                    <div class="content-inner7">
-                        <p> We do not sell sugar free cakes.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="wrap-collabsible8">
-                <input id="collapsible8" class="toggle8" type="checkbox">
-                <label for="collapsible8" class="lbl-toggle8">Do you ship cakes?</label>
-                <div class="collapsible-content8">
-                    <div class="content-inner8">
-                        <p>Yes. We can ship both pound and 7 inch layer cakes via UPS anywhere in the United States.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrap-collabsible9">
-                <input id="collapsible9" class="toggle9" type="checkbox">
-                <label for="collapsible9" class="lbl-toggle9">What is your Refund Policy?</label>
-                <div class="collapsible-content9">
-                    <div class="content-inner9">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro accusamus atque quae alias
-                            distinctio maxime excepturi provident dolor quos dolore.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrap-collabsible10">
-                <input id="collapsible10" class="toggle10" type="checkbox">
-                <label for="collapsible10" class="lbl-toggle10">How long does a cake stay fresh?</label>
-                <div class="collapsible-content10">
-                    <div class="content-inner10">
-                        <p>As a general rule, our cakes stay fresh at room temperature up to one week.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-
-
-
-    <script>
-        let myLabels = document.querySelectorAll('.lbl-toggle');
-
-        Array.from(myLabels).forEach(label => {
-            label.addEventListener('keydown', e => {
-                // 32 === spacebar
-                // 13 === enter
-                if (e.which === 32 || e.which === 13) {
-                    e.preventDefault();
-                    label.click();
-                };
-            });
-        });
-    </script>
-
-
-    <!-- Foooter -->
-    <div id="footer" class="footer">
-        <div class="content">
-            <div class="favors">
-                <p>Favors</p>
-                <ul>
-
-                    <li><a href="#index">About Us</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="#best-seller">Best Seller</a></li>
-                    <li><a href="">About Us</a></li>
-                </ul>
-            </div>
-
-            <div class="help-center">
-                <p>Help Center</p>
-                <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="best_seller">
-                <p>Best Seller</p>
-                <ul>
-                    <li><a href="#best-seller">Wedding Cake</a></li>
-                    <li><a href="#best-seller">Birthday cake</a></li>
-                    <li><a href="#best-seller">Cup Cake</a></li>
-                </ul>
-            </div>
-            <div class="logo">
-                <img src="asset/Desain tanpa judul (1).png" alt=""> <br>
-                <div class="copyright">
-                    <img src="asset/copyright (1).png" alt="">
-                    <p class="copyright-text">1997-now, Favors</p>
-                </div>
-            </div>
-            <div class="sosmed">
-                <p>Contact Us</p>
-                <ul>
-                    <li> <img src="asset/instagram.png" alt=""></li>
-                    <li> <img src="asset/twitter.png" alt=""></li>
-                    <li> <img src="asset/facebook.png" alt=""></li>
-                    <li> <img src="asset/tiktok.png" alt=""></li>
-                    <li> <img src="asset/email.png" alt=""></li>
-                </ul>
-            </div>
-        </div>
-
-
-    </div>
-    </div>
 
 
 

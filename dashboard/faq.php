@@ -195,8 +195,6 @@
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
                                 <li class="breadcrumb-item active">Frequently Ask Question</li>
-                                <li><a href="tambah-data-faq.html" style="margin-left: 900px; color:#680a83">Tambah Data
-                                        +</a></li>
                             </ul>
                         </div>
                     </div>
@@ -217,22 +215,26 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>001</td>
-                                                <td>01 Oct 2019</td>
-                                                <td>01.00 PM</td>
-                                                <td class="text-end">
-                                                    <div class="actions">
-                                                        <a href="form-edit-faq.php"
-                                                            class="btn btn-sm bg-success-light me-2">
-                                                            <i class="fe fe-pencil"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-sm bg-danger-light">
-                                                            <i class="fe fe-trash"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            <?php
+                                            include 'koneksi.php';
+                    $sql = ("SELECT * FROM faq");
+                    $query = mysqli_query($connect, $sql);
+                    while($data = mysqli_fetch_array($query)){
+                        echo"
+                        <tr>
+                            <td>$data[id]</td>
+                            <td>$data[pertanyaan]</td>
+                            <td>$data[jawaban]</td>
+                            <td>
+                            <div class='opsi'>
+                            <a href='form-edit-faq.php?id=".$data ['id']."'  
+                            class='btn btn-sm bg-success-light me-2'>
+                            <i class='fe fe-pencil'></i ></a>
+                            </td>
+                         </tr>
+                      ";
+            } 
+                    ?>
                                         </tbody>
                                     </table>
                                 </div>
