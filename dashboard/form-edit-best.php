@@ -214,7 +214,7 @@ if ( mysqli_num_rows($query) < 1){
                                             <h4 class="card-title">Edit Data</h4>
                                         </div>
                                         <div class="card-body">
-                                            <form method="post" action="update-best.php">
+                                            <form method="post" action="update-best.php" enctype="multipart/form-data">
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Id</label>
                                                     <div class="col-md-10">
@@ -249,9 +249,9 @@ if ( mysqli_num_rows($query) < 1){
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Gambar</label>
                                                     <div class="col-md-10">
-                                                        <img src="gambar/<?php echo $data['gambar']; ?>"
+                                                        <img src="gambar/<?php echo $data['upload']; ?>"
                                                             style="width: 70px; margin-bottom: 30px;">
-                                                        <input type="file" name="gambar" class="form-control" value="<?php echo $data['gambar'];?>">
+                                                        <input type="file" name="upload" class="form-control">
                                                     </div>
                                                     <input type="submit"
                                                         style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;"

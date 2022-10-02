@@ -215,14 +215,13 @@ include 'koneksi.php'
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
-                                                <th>Gambar</th>
                                                 <th>Nama</th>
-                                                <th>Deskripsi</th>
+                                                <th>Gambar</th>    
                                                 <th>Harga</th>
+                                                <th>Deskripsi</th>
                                                 <th class="text-end">Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
                                         <tbody>
                                             <?php
                     $sql = ("SELECT * FROM bestseller");
@@ -231,10 +230,11 @@ include 'koneksi.php'
                         echo"
                         <tr>
                             <td>$data[id]</td>
-                            <td> <img src='gambar/$data[upload]' width ='50px'></td>   
                             <td>$data[nama]</td>
-                            <td>$data[deskripsi]</td>
+                            <td> <img src='gambar/$data[upload]' width ='50px'></td>   
                             <td>$data[harga]</td>
+                            <td>$data[deskripsi]</td>
+                         
                             <td>
                             <div class='opsi'>
                             <a href='form-edit-best.php?id=".$data ['id']."'  
@@ -249,19 +249,17 @@ include 'koneksi.php'
                       ";
             } 
                     ?>
+
+                                        </tbody>
+                                    </table>
                                 </div>
-                                </td>
-                                </tr>
-                                </tbody>
-                                </table>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
 
