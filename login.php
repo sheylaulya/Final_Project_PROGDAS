@@ -36,7 +36,7 @@
             <form action="">
                 <input type="text" placeholder="username" required="required">
                 <input type="password" placeholder="password" required="required">
-                <a href="dashboard/hero.php">
+                <a href="dashboard/tampilan-awal.php">
                     <span></span>
                     <span></span>
                     <span></span>
