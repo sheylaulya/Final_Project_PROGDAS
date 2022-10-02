@@ -176,7 +176,6 @@ include 'koneksi.php'
                             <a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Tambah Data</span>
                                 <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="tampilan-awal.php" class="active">Tampilan Awal</a></li>
                                 <li><a href="best.php"
                                         style="color: #ffff; font-family: 'quicksand'; font-weight: 800; background-color: #680a83; border-radius: 0px 50px 50px 0px;">Best
                                         Seller</a></li>

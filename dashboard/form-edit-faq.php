@@ -171,7 +171,6 @@ if ( mysqli_num_rows($query) < 1){
                             <a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Edit Data</span>
                                 <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="tampilan-awal.php" class="active">Tampilan Awal</a></li>
                                 <li><a href="best.php" style="color: black;">Best Seller</a></li>
                                 <li><a href="recommendation.php">Recommendation</a></li>
                                 <li><a href="faq.php">FAQ</a></li>
@@ -219,20 +218,20 @@ if ( mysqli_num_rows($query) < 1){
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Id</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" value="<?php echo $data['id']?>">
+                                                        <input type="text" name='id' class="form-control" value="<?php echo $data['id']?>">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Pertanyaan</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" value="<?php echo $data['pertanyaan']?>">
+                                                        <input type="text" name="pertanyaan" class="form-control" value="<?php echo $data['pertanyaan']?>">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-form-label col-md-2">Jawaban</label>
                                                     <div class="col-md-10">
-                                                        <input type="text" class="form-control" value="<?php echo $data['jawaban']?>">
+                                                        <input type="text" name="jawaban" class="form-control" value="<?php echo $data['jawaban']?>">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">

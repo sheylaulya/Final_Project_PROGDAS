@@ -178,7 +178,7 @@ include 'koneksi.php'
         </div>
         <div class='wrapper'>
             <?php
-     $sql = ("SELECT * from rekomen");
+     $sql = ("SELECT * from rekomen ORDER BY id LIMIT 4");
      $query = mysqli_query($connect, $sql);
      while($data = mysqli_fetch_array($query)){
         echo"
@@ -221,7 +221,7 @@ include 'koneksi.php'
 
 
     <!-- FAQ -->
-    <div class="faq">
+    <div id='FAQ' class="faq">
         <div class="faq-kiri">
             <div class="judul-faq">
                 <div class="bg">

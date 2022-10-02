@@ -171,7 +171,6 @@ if ( mysqli_num_rows($query) < 1){
                             <a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Tambah Data</span>
                                 <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="hero.php" class="active">Hero</a></li>
                                 <li><a href="best.php" style="color: black;">Best Seller</a></li>
                                 <li><a href="recommendation.php">Recommendation</a></li>
                                 <li><a href="faq.php">FAQ</a></li>

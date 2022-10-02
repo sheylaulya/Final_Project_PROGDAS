@@ -172,7 +172,6 @@
                             <a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Tambah Data</span>
                                 <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
-                                <li><a href="tampilan-awal.php" class="active">Tampilan Awal</a></li>
                                 <li><a href="best.php">Best Seller</a></li>
                                 <li><a href="recommendation.php">Recommendation</a></li>
                                 <li><a href="faq.php"
