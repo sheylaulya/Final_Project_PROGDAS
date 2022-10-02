@@ -6,7 +6,7 @@ if (isset($_POST['simpan'])) {
     $pertanyaan = $_POST['pertanyaan'];
     $jawaban = $_POST['jawaban'];
  
-    $sql = "UPDATE `faq` SET `pertanyaan`='$pertanyaan',`jawaban`='$jawaban' WHERE $id";
+    $sql = "UPDATE `faq` SET `pertanyaan`='$pertanyaan',`jawaban`='$jawaban' where id = '$id'";
     $query = mysqli_query($connect, $sql);
 
     if($query) {
